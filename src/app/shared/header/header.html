@@ -1,0 +1,75 @@
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+    <a routerLink="/" class="flex flex-col items-start">
+      <div class="items-baseline gap-1">
+        <span class="text-2xl font-black text-avitem-petroleo">AVITEM</span>
+      </div>
+      <span class="text-xs font-bold text-avitem-petroleo tracking-widest">IMPORTACIONES</span>
+      <span class="text-[9px] italic text-gray-500">Construyendo tus sueños</span>
+    </a>
+
+    <nav class="hidden lg:flex space-x-8 font-semibold text-sm text-avitem-petroleo">
+
+      <a routerLink="/"
+         routerLinkActive="text-avitem-turquesa border-b-2 border-avitem-turquesa"
+         [routerLinkActiveOptions]="{ exact: true }"
+         class="pb-1 transition hover:text-avitem-turquesa">
+        Inicio
+      </a>
+      <a routerLink="/nosotros"
+          routerLinkActive="text-avitem-turquesa border-b-2 border-avitem-turquesa"
+          class="pb-1 transition hover:text-avitem-turquesa">
+        Nosotros
+      </a>
+      <a routerLink="/categorias"
+         routerLinkActive="text-avitem-turquesa border-b-2 border-avitem-turquesa"
+         class="pb-1 transition hover:text-avitem-turquesa">
+        Categorias
+      </a>
+      
+      <a routerLink="/materiales"
+         routerLinkActive="text-avitem-turquesa border-b-2 border-avitem-turquesa"
+         class="pb-1 transition hover:text-avitem-turquesa">
+        Materiales
+      </a>
+
+      <a routerLink="/productos"
+         routerLinkActive="text-avitem-turquesa border-b-2 border-avitem-turquesa"
+         class="pb-1 transition hover:text-avitem-turquesa">
+        Policarbonatos
+      </a>
+
+      <a routerLink="/importaciones"
+         routerLinkActive="text-avitem-turquesa border-b-2 border-avitem-turquesa"
+         class="pb-1 transition hover:text-avitem-turquesa">
+        Importaciones
+      </a>
+
+      <a routerLink="/contacto"
+         routerLinkActive="text-avitem-turquesa border-b-2 border-avitem-turquesa"
+         class="pb-1 transition hover:text-avitem-turquesa">
+        Ubicación
+      </a>
+
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <div class="relative hidden sm:block">
+        <input type="text"
+          placeholder="Buscar productos..."
+          class="w-48 xl:w-64 pl-3 pr-8 py-2 bg-gray-100 text-xs rounded-lg focus:outline-none focus:ring-1 focus:ring-avitem-turquesa">
+        <span class="absolute right-2.5 top-2 text-gray-400">🔍</span>
+      </div>
+
+      <a routerLink="/carrito"
+         routerLinkActive="text-avitem-turquesa"
+         class="relative p-2 text-avitem-petroleo hover:text-avitem-turquesa">
+        <span class="text-xl">🛒</span>
+        <span class="absolute top-0 right-0 bg-avitem-turquesa text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+      </a>
+    </div>
+
+  </div>
+</header>

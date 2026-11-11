@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { Footer } from '../footer/footer';
+import { Footer } from '../shared/footer/footer';
+import { Header } from '../shared/header/header';
 
 @Component({
-  imports: [Footer],
+  imports: [Header, Footer],
   selector: 'app-home',
   styleUrl: './home.css',
   templateUrl: './home.html',

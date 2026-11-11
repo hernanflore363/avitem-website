@@ -1,0 +1,44 @@
+<app-header/>
+<!-- PRODUCTOS: src/app/pages/productos/productos.html -->
+<section class="bg-slate-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <p class="text-sm font-bold uppercase tracking-widest text-teal-300">Catálogo AVITEM</p>
+    <h1 class="mt-2 text-4xl md:text-5xl font-black">Nuestros productos</h1>
+    <p class="mt-4 max-w-2xl text-gray-300">Explora nuestras líneas de materiales para construcción, estructuras, cubiertas e instalaciones.</p>
+  </div>
+</section>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="flex flex-col md:flex-row gap-3 md:items-center md:justify-between mb-8">
+    <div><h2 class="text-2xl font-black text-slate-900">Catálogo de productos</h2><p class="mt-1 text-sm text-gray-500">Consulta disponibilidad y precios actualizados.</p></div>
+    <input type="search" placeholder="Buscar un producto..." class="w-full md:w-80 rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-teal-500"/>
+  </div>
+  <div class="flex flex-wrap gap-2 mb-7">
+    <button class="rounded-full bg-teal-600 px-4 py-2 text-sm font-semibold text-white">Todos</button>
+    <button class="rounded-full border px-4 py-2 text-sm font-semibold hover:border-teal-600 hover:text-teal-700">Policarbonatos</button>
+    <button class="rounded-full border px-4 py-2 text-sm font-semibold hover:border-teal-600 hover:text-teal-700">Acero y hierro</button>
+    <button class="rounded-full border px-4 py-2 text-sm font-semibold hover:border-teal-600 hover:text-teal-700">Techos</button>
+    <button class="rounded-full border px-4 py-2 text-sm font-semibold hover:border-teal-600 hover:text-teal-700">Ferretería</button>
+    <button class="rounded-full border px-4 py-2 text-sm font-semibold hover:border-teal-600 hover:text-teal-700">Instalaciones</button>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="overflow-hidden rounded-2xl border bg-white shadow-sm"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=85" alt="Policarbonato alveolar" class="h-56 w-full object-cover"/><div class="p-5"><span class="text-xs font-bold text-teal-700">DESTACADO · POLICARBONATOS</span><h3 class="mt-2 text-lg font-bold">Policarbonato alveolar 10 mm</h3><p class="mt-2 text-sm text-gray-500">Láminas para cubiertas y cerramientos. Consulta colores, medidas y disponibilidad.</p><div class="mt-5 flex items-center justify-between"><strong class="text-xl text-teal-700">Cotizar</strong><a routerLink="/productos/policarbonato-alveolar" class="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-bold text-white">Detalles</a></div></div></article>
+    <article class="overflow-hidden rounded-2xl border bg-white shadow-sm"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85" alt="Hierro y perfiles" class="h-56 w-full object-cover"/><div class="p-5"><span class="text-xs font-bold text-slate-600">ESTRUCTURAL</span><h3 class="mt-2 text-lg font-bold">Hierro y perfiles metálicos</h3><p class="mt-2 text-sm text-gray-500">Varillas, tubos y perfiles para diferentes aplicaciones constructivas.</p><div class="mt-5 flex items-center justify-between"><strong class="text-xl text-teal-700">Cotizar</strong><a routerLink="/cotizacion" class="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-bold text-white">Consultar</a></div></div></article>
+    <article class="overflow-hidden rounded-2xl border bg-white shadow-sm"><img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1000&q=85" alt="Herramientas de ferretería" class="h-56 w-full object-cover"/><div class="p-5"><span class="text-xs font-bold text-blue-700">FERRETERÍA</span><h3 class="mt-2 text-lg font-bold">Herramientas y fijaciones</h3><p class="mt-2 text-sm text-gray-500">Herramientas, tornillos, pernos y accesorios de uso general.</p><div class="mt-5 flex items-center justify-between"><strong class="text-xl text-teal-700">Cotizar</strong><a routerLink="/cotizacion" class="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-bold text-white">Consultar</a></div></div></article>
+    <article class="overflow-hidden rounded-2xl border bg-white shadow-sm"><img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1000&q=85" alt="Tuberías y accesorios" class="h-56 w-full object-cover"/><div class="p-5"><span class="text-xs font-bold text-cyan-700">INSTALACIONES</span><h3 class="mt-2 text-lg font-bold">Tuberías y accesorios PVC</h3><p class="mt-2 text-sm text-gray-500">Tubos y conexiones para instalaciones de agua y sanitarias.</p><div class="mt-5 flex items-center justify-between"><strong class="text-xl text-teal-700">Cotizar</strong><a routerLink="/cotizacion" class="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-bold text-white">Consultar</a></div></div></article>
+    <article class="overflow-hidden rounded-2xl border bg-white shadow-sm"><img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=85" alt="Pinturas y acabados" class="h-56 w-full object-cover"/><div class="p-5"><span class="text-xs font-bold text-violet-700">ACABADOS</span><h3 class="mt-2 text-lg font-bold">Pinturas y accesorios</h3><p class="mt-2 text-sm text-gray-500">Productos para acabado, renovación y mantenimiento.</p><div class="mt-5 flex items-center justify-between"><strong class="text-xl text-teal-700">Cotizar</strong><a routerLink="/cotizacion" class="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-bold text-white">Consultar</a></div></div></article>
+    <article class="overflow-hidden rounded-2xl border bg-white shadow-sm"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=85" alt="Protección e impermeabilización" class="h-56 w-full object-cover"/><div class="p-5"><span class="text-xs font-bold text-emerald-700">PROTECCIÓN</span><h3 class="mt-2 text-lg font-bold">Impermeabilizantes y selladores</h3><p class="mt-2 text-sm text-gray-500">Alternativas para proteger superficies de humedad y filtraciones.</p><div class="mt-5 flex items-center justify-between"><strong class="text-xl text-teal-700">Cotizar</strong><a routerLink="/cotizacion" class="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-bold text-white">Consultar</a></div></div></article>
+  </div>
+</section>
+<app-footer/>
+<app-producto-detalle/>
+<!-- MARCAS: src/app/pages/marcas/marcas.html -->
+<section class="bg-slate-900 text-white"><div class="max-w-7xl mx-auto px-4 py-16"><p class="text-sm font-bold uppercase tracking-widest text-teal-300">Nuestros fabricantes</p><h1 class="mt-2 text-4xl md:text-5xl font-black">Marcas y proveedores</h1><p class="mt-4 max-w-2xl text-gray-300">Conoce las marcas y líneas de productos disponibles en AVITEM IMPORTACIONES.</p></div></section>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+  <div class="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">Completa esta sección con los logotipos de las marcas que AVITEM comercializa o distribuye oficialmente. No se incluyen marcas ficticias.</div>
+  <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <div class="rounded-xl border bg-white p-7 text-center"><div class="mx-auto flex h-20 items-center justify-center rounded-lg bg-gray-50"><span class="text-2xl font-black text-slate-400">MARCA 01</span></div><p class="mt-3 text-sm font-semibold text-slate-800">Nombre de marca</p></div>
+    <div class="rounded-xl border bg-white p-7 text-center"><div class="mx-auto flex h-20 items-center justify-center rounded-lg bg-gray-50"><span class="text-2xl font-black text-slate-400">MARCA 02</span></div><p class="mt-3 text-sm font-semibold text-slate-800">Nombre de marca</p></div>
+    <div class="rounded-xl border bg-white p-7 text-center"><div class="mx-auto flex h-20 items-center justify-center rounded-lg bg-gray-50"><span class="text-2xl font-black text-slate-400">MARCA 03</span></div><p class="mt-3 text-sm font-semibold text-slate-800">Nombre de marca</p></div>
+    <div class="rounded-xl border bg-white p-7 text-center"><div class="mx-auto flex h-20 items-center justify-center rounded-lg bg-gray-50"><span class="text-2xl font-black text-slate-400">MARCA 04</span></div><p class="mt-3 text-sm font-semibold text-slate-800">Nombre de marca</p></div>
+  </div>
+</section>
