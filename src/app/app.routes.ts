@@ -9,6 +9,7 @@ export const routes: Routes = [
     { path: 'marcas', loadComponent: () => import('./pages/marcas/marcas') },
     { path: '404', component: Error404 },
     { path: '**', redirectTo: '404', pathMatch: 'full' },
+    
   /*{ path: 'marcas', component: Brands },
     { path: 'nosotros', component: About },
     { path: 'contacto', component: Contact },
