@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import Error404 from './pages/error404/error404';
 
 export const routes: Routes = [
     { path: '', loadComponent: () => import('./home/home') },
@@ -12,4 +13,6 @@ export const routes: Routes = [
     { path: 'contacto', component: Contact },
     { path: 'cotizacion', component: Quote },
     { path: '**', redirectTo: '' }*/
+    { path: '404', component: Error404 },
+    { path: '**', redirectTo: '404', pathMatch: 'full' },
 ];
