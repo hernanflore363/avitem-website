@@ -30,7 +30,7 @@ jobs:
         run: npm run build:prod
 
       - name: Rename index for GitHub Pages routing
-        run: mv dist/myProfile/browser/index.html dist/avitem/browser/404.html
+        run: mv dist/avitem/browser/index.html dist/avitem/browser/404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

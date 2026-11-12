@@ -7,8 +7,7 @@
     "build": "ng build",
     "build:prod": "ng build --configuration=production --base-href=/avitem/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:avitem": "node dist/avitem/server/server.mjs"
+    "test": "ng test"
   },
   "private": true,
   "packageManager": "npm@11.19.0",
